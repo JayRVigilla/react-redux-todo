@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
-import './index.css';
-import toDoReducer from ".toDoReducer";
-import App from './App';
+import toDoReducer from "./toDoReducer";
 
 /**
  * Top level of app.
@@ -22,12 +22,11 @@ const store = createStore(
     && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 );
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
+  <Provider store={store}>
     <App />
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </Provider>,
+  document.getElementById("root")
 );
 

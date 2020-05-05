@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import ToDoItem from "./ToDoItem";
 import toDoReducer from "./toDoReducer";
+import "./ToDoList.css"
 
 
 /**

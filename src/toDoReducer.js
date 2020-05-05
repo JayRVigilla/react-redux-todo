@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
   todos: [] //array of todo objects with keys of task, dueDate, and a unique id
-}
+};
 
 /**
  * Complete Reducer function for ise with Redux.
